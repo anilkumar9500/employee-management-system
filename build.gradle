@@ -37,3 +37,11 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+tasks.named('bootJar') {
+	archiveFileName = 'Employee_management.jar'
+}
+
+tasks.named('jar') {
+	enabled = false
+}
