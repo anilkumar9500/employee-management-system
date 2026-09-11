@@ -9,7 +9,13 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173")
+//@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(
+        origins = {
+                "http://localhost:5173",
+                "https://employee-management-system-frontend-production-c026.up.railway.app"
+        }
+)
 public class AuthController {
 
     private final AdminService adminService;
